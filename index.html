@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+    <script src="./assets/javascript/app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <head class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Totally Trivial Game</h1>
+          <br />
+          <button id="start" class="btn btn-danger">Start</button>
+        </div>
+      </head>
+
+      <section id="triviaQuestions">
+        <div><h2>Time remaining: <span id="timer"></span><span> seconds</span></h2></div>
+        <br />
+
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Superman?</h2>
+            <form id="questionOne" action="/action_page.php">
+              <input type="radio" name="supermanName" value="Eric Bana" /> Eric
+              Bana
+              <input type="radio" name="supermanName" value="Peter Parker" />
+              Peter Parker
+              <input type="radio" name="supermanName" value="Clark Kent" />
+              Clark Kent
+              <input type="radio" name="supermanName" value="Barry Allen" />
+              Barry Allen
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Flash?</h2>
+            <form id="questionTwo" action="/action_page.php">
+              <input type="radio" name="flashName" value="Rex Mason" /> Rex
+              Mason
+              <input type="radio" name="flashName" value="Barry Allen" /> Barry
+              Allen
+              <input type="radio" name="flashName" value="Clark Kent" /> Clark
+              Kent
+              <input type="radio" name="flashName" value="Raymond Palmer" />
+              Raymond Palmer
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Batman?</h2>
+            <form id="questionThree" action="/action_page.php">
+              <input type="radio" name="batmanName" value="Bruce Wayne" /> Bruce
+              Wayne
+              <input type="radio" name="batmanName" value="Victor Stone" />
+              Victor Stone
+              <input type="radio" name="batmanName" value="Clark Kent" /> Clark
+              Kent
+              <input type="radio" name="batmanName" value="Raymond Palmer" />
+              Raymond Palmer
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Green Lanter</h2>
+            <form id="questionFour" action="/action_page.php">
+              <input type="radio" name="greenName" value="Barry Allen" /> Barry
+              Allen
+              <input type="radio" name="greenName" value="Victor Stone" />
+              Victor Stone
+              <input type="radio" name="greenName" value="Hal Jordan" /> Hal
+              Jordan
+              <input type="radio" name="greenName" value="Oliver Queen" />
+              Oliver Queen
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de la Mujer Maravilla?</h2>
+            <form id="questionFive" action="/action_page.php">
+              <input type="radio" name="mujerName" value="Diana" /> Diana
+              <input type="radio" name="mujerName" value="Elizabeth Queen" />
+              Elizabeth Queen
+              <input type="radio" name="mujerName" value="Hal Jordan" /> Hal
+              Jordan
+              <input type="radio" name="mujerName" value="Oliva Moore" /> Olivia
+              Moore
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Shazam?</h2>
+            <form id="questionSix" action="/action_page.php">
+              <input type="radio" name="greenName" value="Raymond Palmer" />
+              Raymond Palmer
+              <input type="radio" name="greenName" value="Billy Batson" /> Billy
+              Batson
+              <input type="radio" name="greenName" value="Hal Jordan" /> Hal
+              Jordan
+              <input type="radio" name="greenName" value="Kal-El" /> Kal-El
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Atom?</h2>
+            <form id="questionSeven" action="/action_page.php">
+              <input type="radio" name="greenName" value="Raymond Palmer" />
+              Raymond Palmer
+              <input type="radio" name="greenName" value="Victor Stone" />
+              Victor Stone
+              <input type="radio" name="greenName" value="Hal Jordan" /> Hal
+              Jordan
+              <input type="radio" name="greenName" value="Rex Mason" /> Rex
+              Mason
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Cyborg?</h2>
+            <form id="questionEight" action="/action_page.php">
+              <input type="radio" name="greenName" value="Raymond Palmer" />
+              Raymond Palmer
+              <input type="radio" name="greenName" value="Rex Mason" /> Rex
+              Mason
+              <input type="radio" name="greenName" value="Barry Allen" /> Barry
+              Allen
+              <input type="radio" name="greenName" value="Victor Stone" />
+              Victor Stone
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nomnre secreto de Green Arrow?</h2>
+            <form id="questionNine" action="/action_page.php">
+              <input type="radio" name="greenName" value="Raymond Palmer" />
+              Raymond Palmer
+              <input type="radio" name="greenName" value="Billy Batson" /> Billy
+              Batson
+              <input type="radio" name="greenName" value="Barry Allen" /> Barry
+              Allen
+              <input type="radio" name="greenName" value="Oliver Queen" />
+              Oliver Queen
+            </form>
+          </li>
+          <li class="list-group-item">
+            <h2>¿Cuál es el nombre secreto de Metamorpho?</h2>
+            <form id="questionTen" action="/action_page.php">
+              <input type="radio" name="greenName" value="Bruce Wayne" /> Bruce
+              Wayne
+              <input type="radio" name="greenName" value="Hal Jordan" /> Hal
+              Jordan
+              <input type="radio" name="greenName" value="Barry Allen" /> Barry
+              Allen
+              <input type="radio" name="greenName" value="Rex Mason" /> Rex
+              Mason
+            </form>
+          </li>
+        </ul>
+        <button id="done" class="btn btn-primary">DONE</button>
+      </section>
+
+      <div id="scoreboard" class="card" style="width: 18rem;">
+        <div class="card-header"><h3>All Done!!</h3></div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <h3>Correct answers: <span id="correctAnswers"></span></h3>
+          </li>
+          <li class="list-group-item">
+            <h3>Incorrect answers: <span id="incorrectAnswers"></span></h3>
+          </li>
+          <li class="list-group-item">
+            <h3>Unanswered: <span id="unanswered"></span></h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+  </body>
+</html>
