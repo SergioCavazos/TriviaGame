@@ -4,7 +4,7 @@ window.onload = function() {
 $("#scoreboard").hide();
   $("#start").on("click", startGame);
   $("#start").on("click", hideAndShow);
-  $("#done").on("click", stop);
+  $("#done").on("click", done);
 };
 
 function hideAndShow() {
@@ -31,22 +31,21 @@ function decrement() {
   }
 }
 
+// Si el tiempo se acaba
 function stop() {
   clearInterval(intervalId);
+  $("#scoreHeader").text("Time's up!!");
+  checkAnswers();
+}
+
+// Si le dan click al botón de DONE
+function done() {
+  clearInterval(intervalId);
+  $("#scoreHeader").text("All Done!!");
   checkAnswers();
 }
 
 function checkAnswers() {
-  var q1 = "";
-  var q2 = "";
-  var q3 = "";
-  var q4 = "";
-  var q5 = "";
-  var q6 = "";
-  var q7 = "";
-  var q8 = "";
-  var q9 = "";
-  var q10 = "";
   var i = 0;
   correct = 0;
   wrong = 0;
@@ -157,7 +156,7 @@ else
 
 var answerChosen = "noAnswer"; 
 for (i = 0; i < 4; i++) {
-    if (questionSeven[i].defaultValue === "Billy Batson" && questionSeven[i].checked)
+    if (questionSeven[i].defaultValue === "Raymond Palmer" && questionSeven[i].checked)
         answerChosen = "correct";
     else if(questionSeven[i].checked)
         answerChosen = "incorrect";
@@ -174,7 +173,7 @@ else
 
 var answerChosen = "noAnswer"; 
 for (i = 0; i < 4; i++) {
-    if (questionEight[i].defaultValue === "Billy Batson" && questionEight[i].checked)
+    if (questionEight[i].defaultValue === "Victor Stone" && questionEight[i].checked)
         answerChosen = "correct";
     else if(questionEight[i].checked)
         answerChosen = "incorrect";
@@ -191,7 +190,7 @@ else
 
 var answerChosen = "noAnswer"; 
 for (i = 0; i < 4; i++) {
-    if (questionNine[i].defaultValue === "Billy Batson" && questionNine[i].checked)
+    if (questionNine[i].defaultValue === "Oliver Queen" && questionNine[i].checked)
         answerChosen = "correct";
     else if(questionNine[i].checked)
         answerChosen = "incorrect";
@@ -208,7 +207,7 @@ else
 
 var answerChosen = "noAnswer"; 
 for (i = 0; i < 4; i++) {
-    if (questionTen[i].defaultValue === "Billy Batson" && questionTen[i].checked)
+    if (questionTen[i].defaultValue === "Rex Mason" && questionTen[i].checked)
         answerChosen = "correct";
     else if(questionTen[i].checked)
         answerChosen = "incorrect";

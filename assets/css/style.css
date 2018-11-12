@@ -1,3 +1,74 @@
+#superman-image {
+    background-image: url(../images/Superman.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+}
+#flash-image {
+    background-image: url(../images/flash.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+    background-size: cover;
+}
+
+#batman-image {
+    background-image: url(../images/batman.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+}
+
+#green-image {
+    background-image: url(../images/greenlantern.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+    background-size: cover;
+}
+
+#wonder-image {
+    background-image: url(../images/wonder.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+}
+
+#shazam-image {
+    background-image: url(../images/shazam.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+
+#atom-image {
+    background-image: url(../images/atom.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+}
+
+#cyborg-image {
+    background-image: url(../images/Cyborg.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+
+#arrow-image {
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 200px;
+}
+
+#meta-image {
+    background-image: url(../images/metamorpho.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+
 #triviaQuestions {
     display: none;
 };
